@@ -3,6 +3,46 @@ body{
     background-color: aquamarine;
 }
 
+#header{
+    grid-area: header;
+}
+
+#nav{
+    grid-area: nav;
+}
+
+#content{
+    grid-area: content;
+    height: 30vh;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-areas: 
+        "header header header header"
+        "nav content aside sidebar"
+        "footer footer footer footer";
+}
+
+#wrapper > div{
+    background-color: blueviolet;
+    text-align: center;
+}
+
 /* reszponzivitás beállítása */
 @media all and (max-width: 1200px){
     body{
