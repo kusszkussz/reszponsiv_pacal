@@ -1,3 +1,24 @@
-.body{
+body{
+    margin: 20px;
     background-color: aquamarine;
+}
+
+/* reszponzivitás beállítása */
+@media all and (max-width: 1200px){
+    body{
+        background-color: rgb(128, 212, 201);
+    }
+}
+
+@media all and (max-width: 800px){
+    body{
+        background-color: rgb(76, 139, 131);
+    }
+}
+
+@media all and (max-width: 500px){
+    body{
+        color: whitesmoke;
+        background-color: rgb(24, 66, 61);
+    }
 }
